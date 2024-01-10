@@ -8,15 +8,15 @@
   </head>
   <body class="text-slate-500 font-body">
     <!-- content wrapper -->
-    <div>
-      <div>
+    <div class="grid md:grid-cols-3">
+      <div class="md:col-span-1">
         <nav>
           <div>
             <h1 class="font-bold uppercase p-4">
               <a
                 href="/"
                 class="text-green-500 sm:text-red-300 md:text-purple-500 lg:text-blue-500 xl:text-pink-600 text-sm md:text-xl"
-                >Healthy Delivery</a
+                >Healthy Dishes</a
               >
             </h1>
           </div>
@@ -40,7 +40,7 @@
         </nav>
       </div>
 
-      <main class="px-16 py-6 bg-slate-100">
+      <main class="px-16 py-6 bg-slate-100 md:col-span-2">
         <div class="flex justify-center md:justify-end">
           <a href="#" class="text-primary">Log in</a>
           <a href="#" class="text-primary ml-2">Sign up</a>
@@ -56,9 +56,9 @@
             Latest Recipes
           </h4>
 
-          <div class="mt-8">
+          <div class="mt-8 grid lg:grid-cols-3 gap-6">
             <!-- cards go here -->
-            <div class="bg-white rounded overflow-hidden shadow-md">
+            <div class="card">
               <img
                 src="img/food01.jpg"
                 alt="Food"
@@ -69,6 +69,41 @@
                 <span class="block text-slate-500 text-sm"
                   >Recipe by Sarah</span
                 >
+              </div>
+              <div class="badge">
+                <span>25 mins</span>
+              </div>
+            </div>
+            <!-- cards go here -->
+            <div class="card">
+              <img
+                src="img/food02.jpg"
+                alt="Food"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="p-4">
+                <span class="font-bold">Sweet Curry</span>
+                <span class="block text-slate-500 text-sm"
+                  >Recipe by Catherine</span
+                >
+              </div>
+              <div class="badge">
+                <span>25 mins</span>
+              </div>
+            </div>
+            <!-- cards go here -->
+            <div class="card">
+              <img
+                src="img/food03.jpg"
+                alt="Food"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="p-4">
+                <span class="font-bold">5 Bean Chili Stew</span>
+                <span class="block text-slate-500 text-sm">Recipe by Mike</span>
+              </div>
+              <div class="badge">
+                <span>25 mins</span>
               </div>
             </div>
           </div>

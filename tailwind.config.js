@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#a855f7",
+        primary: "#ff6c00",
       },
       fontFamily: {
         body: ["Nunito"],
