@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,11 @@
         <nav>
           <div>
             <h1 class="font-bold uppercase p-4">
-              <a href="/">Food Eats</a>
+              <a
+                href="/"
+                class="text-green-500 sm:text-red-300 md:text-purple-500 lg:text-blue-500 xl:text-pink-600 text-sm md:text-xl"
+                >Healthy Delivery</a
+              >
             </h1>
           </div>
           <ul>
@@ -36,10 +40,10 @@
         </nav>
       </div>
 
-      <main class="px-16 py-6">
-        <div>
+      <main class="px-16 py-6 bg-slate-100">
+        <div class="flex justify-center md:justify-end">
           <a href="#" class="text-primary">Log in</a>
-          <a href="#" class="text-primary">Sign up</a>
+          <a href="#" class="text-primary ml-2">Sign up</a>
         </div>
 
         <header>
@@ -54,11 +58,17 @@
 
           <div class="mt-8">
             <!-- cards go here -->
-            <div>
-              <img src="img/food01.jpg" alt="Food" />
-              <div>
-                <span>5 Bean Chili Stew</span>
-                <span>Recipe by Sarah</span>
+            <div class="bg-white rounded overflow-hidden shadow-md">
+              <img
+                src="img/food01.jpg"
+                alt="Food"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="p-4">
+                <span class="font-bold">5 Bean Chili Stew</span>
+                <span class="block text-slate-500 text-sm"
+                  >Recipe by Sarah</span
+                >
               </div>
             </div>
           </div>
@@ -72,8 +82,8 @@
           </div>
         </div>
 
-        <div>
-          <div class="bg-slate-100 text-primary font-bold">Load more</div>
+        <div class="flex justify-center">
+          <div class="bg-slate-100 text-primary font-bold p-3">Load more</div>
         </div>
       </main>
     </div>
