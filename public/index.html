@@ -8,30 +8,49 @@
   </head>
   <body class="text-slate-500 font-body">
     <!-- content wrapper -->
-    <div class="grid md:grid-cols-3">
-      <div class="md:col-span-1">
-        <nav>
-          <div>
+    <div class="grid md:grid-cols-3 lg:grid-cols-4">
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex items-center justify-between">
             <h1 class="font-bold uppercase p-4">
               <a
                 href="/"
-                class="text-green-500 sm:text-red-300 md:text-purple-500 lg:text-blue-500 xl:text-pink-600 text-sm md:text-xl"
-                >Healthy Dishes</a
+                class="text-green-500 sm:text-red-300 md:text-purple-500 lg:text-blue-500 xl:text-pink-600 text-sm md:text-xl hover:text-slate-700"
+              >
+                Healthy Dishes</a
               >
             </h1>
+            <div class="px-4 cursor-pointer md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </div>
-          <ul>
-            <li class="text-slate-700 font-bold">
-              <a href="#">
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-slate-700 py-3 font-bold">
+              <a
+                href="#"
+                class="flex justify-end px-4 border-r-4 border-primary"
+              >
                 <span>Home</span>
                 <svg
-                  class="w-5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5 ml-2"
                 >
                   <path
                     stroke-linecap="round"
@@ -41,17 +60,16 @@
                 </svg>
               </a>
             </li>
-            <li class="text-slate-700">
-              <a href="#">
+            <li class="text-slate-700 py-3">
+              <a href="#" class="flex justify-end px-4 border-r-4 border-white">
                 <span>About</span>
                 <svg
-                  class="w-5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5 ml-2"
                 >
                   <path
                     stroke-linecap="round"
@@ -61,17 +79,16 @@
                 </svg>
               </a>
             </li>
-            <li class="text-slate-700">
-              <a href="#">
+            <li class="text-slate-700 py-3">
+              <a href="#" class="flex justify-end px-4 border-r-4 border-white">
                 <span>Contact</span>
                 <svg
-                  class="w-5"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5 ml-2"
                 >
                   <path
                     stroke-linecap="round"
@@ -85,14 +102,16 @@
         </nav>
       </div>
 
-      <main class="px-16 py-6 bg-slate-100 md:col-span-2">
+      <main class="px-16 py-6 bg-slate-100 md:col-span-2 lg:col-span-3">
         <div class="flex justify-center md:justify-end">
-          <a href="#" class="text-primary button border-orange-400 md:border-2"
+          <a
+            href="#"
+            class="text-primary button border-orange-400 md:border-2 hover:bg-primary hover:text-white"
             >Log in</a
           >
           <a
             href="#"
-            class="text-primary ml-2 button border-orange-400 md:border-2"
+            class="text-primary ml-2 button border-orange-400 md:border-2 hover:bg-primary hover:text-white"
             >Sign up</a
           >
         </div>
@@ -109,7 +128,7 @@
 
           <div class="mt-8 grid lg:grid-cols-3 gap-6">
             <!-- cards go here -->
-            <div class="card">
+            <div class="card hover:shadow-lg">
               <img
                 src="img/food01.jpg"
                 alt="Food"
@@ -123,13 +142,12 @@
               </div>
               <div class="badge flex justify-center items-center">
                 <svg
-                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5 mr-1"
                 >
                   <path
                     stroke-linecap="round"
@@ -141,7 +159,7 @@
               </div>
             </div>
             <!-- cards go here -->
-            <div class="card">
+            <div class="card hover:shadow-lg">
               <img
                 src="img/food02.jpg"
                 alt="Food"
@@ -155,13 +173,12 @@
               </div>
               <div class="badge flex justify-center items-center">
                 <svg
-                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5 mr-1"
                 >
                   <path
                     stroke-linecap="round"
@@ -173,7 +190,7 @@
               </div>
             </div>
             <!-- cards go here -->
-            <div class="card">
+            <div class="card hover:shadow-lg">
               <img
                 src="img/food03.jpg"
                 alt="Food"
@@ -185,13 +202,12 @@
               </div>
               <div class="badge flex justify-center items-center">
                 <svg
-                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="w-6 h-6"
+                  class="w-5 h-5 mr-1"
                 >
                   <path
                     stroke-linecap="round"
@@ -214,7 +230,9 @@
         </div>
 
         <div class="flex justify-center">
-          <div class="bg-stone-200 text-stone-600 font-bold p-3 button">
+          <div
+            class="bg-stone-200 text-stone-600 font-bold p-3 button hover:shadow-inner"
+          >
             Load more
           </div>
         </div>
