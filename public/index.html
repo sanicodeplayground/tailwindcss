@@ -6,7 +6,7 @@
     <title>Tailwind CSS Shop</title>
     <link href="./styles.css" rel="stylesheet" />
   </head>
-  <body class="text-slate-500 font-body">
+  <body class="text-content font-body">
     <!-- content wrapper -->
     <div class="grid md:grid-cols-3 lg:grid-cols-4">
       <div class="md:col-span-1 md:flex md:justify-end">
@@ -38,10 +38,10 @@
             </div>
           </div>
           <ul class="text-sm mt-6 hidden md:block" id="menu">
-            <li class="text-slate-700 py-3 font-bold">
+            <li class="py-3 font-bold">
               <a
                 href="#"
-                class="flex justify-end px-4 border-r-4 border-primary"
+                class="flex justify-end px-4 border-r-4 border-orange-500"
               >
                 <span>Home</span>
                 <svg
@@ -60,7 +60,7 @@
                 </svg>
               </a>
             </li>
-            <li class="text-slate-700 py-3">
+            <li class="py-3">
               <a href="#" class="flex justify-end px-4 border-r-4 border-white">
                 <span>About</span>
                 <svg
@@ -79,7 +79,7 @@
                 </svg>
               </a>
             </li>
-            <li class="text-slate-700 py-3">
+            <li class="py-3">
               <a href="#" class="flex justify-end px-4 border-r-4 border-white">
                 <span>Contact</span>
                 <svg
@@ -106,19 +106,19 @@
         <div class="flex justify-center md:justify-end">
           <a
             href="#"
-            class="text-primary button border-orange-400 md:border-2 hover:bg-primary hover:text-white"
+            class="text-orange-500 button border-orange-200 md:border-2 hover:bg-orange-500 hover:text-white transition ease-in-out delay-150 hover:scale-110"
             >Log in</a
           >
           <a
             href="#"
-            class="text-primary ml-2 button border-orange-400 md:border-2 hover:bg-primary hover:text-white"
+            class="text-orange-500 ml-2 button border-orange-200 md:border-2 hover:bg-orange-500 hover:text-white transition ease-in-out delay-150 hover:scale-110"
             >Sign up</a
           >
         </div>
 
         <header>
-          <h2 class="text-slate-900 text-6xl font-semibold">Recipes</h2>
-          <h3 class="text-slate-800 text-2xl font-semibold">For Newbies</h3>
+          <h2 class="text-title text-6xl font-semibold">Recipes</h2>
+          <h3 class="text-2xl font-semibold">For Newbies</h3>
         </header>
 
         <div>
@@ -129,94 +129,102 @@
           <div class="mt-8 grid lg:grid-cols-3 gap-6">
             <!-- cards go here -->
             <div class="card hover:shadow-lg">
-              <img
-                src="img/food01.jpg"
-                alt="Food"
-                class="w-full h-32 sm:h-48 object-cover"
-              />
-              <div class="p-4">
-                <span class="font-bold">5 Bean Chili Stew</span>
-                <span class="block text-slate-500 text-sm"
-                  >Recipe by Sarah</span
-                >
-              </div>
-              <div class="badge flex justify-center items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5 mr-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-                <span>25 mins</span>
-              </div>
+              <a href="#">
+                <img
+                  src="img/food01.jpg"
+                  alt="Food"
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="p-4">
+                  <span class="font-bold">5 Bean Chili Stew</span>
+                  <span class="block text-slate-500 text-sm"
+                    >Recipe by Sarah</span
+                  >
+                </div>
+                <div class="badge flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>25 mins</span>
+                </div>
+              </a>
             </div>
             <!-- cards go here -->
             <div class="card hover:shadow-lg">
-              <img
-                src="img/food02.jpg"
-                alt="Food"
-                class="w-full h-32 sm:h-48 object-cover"
-              />
-              <div class="p-4">
-                <span class="font-bold">Sweet Curry</span>
-                <span class="block text-slate-500 text-sm"
-                  >Recipe by Catherine</span
-                >
-              </div>
-              <div class="badge flex justify-center items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5 mr-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-                <span>25 mins</span>
-              </div>
+              <a href="#">
+                <img
+                  src="img/food02.jpg"
+                  alt="Food"
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="p-4">
+                  <span class="font-bold">Sweet Curry</span>
+                  <span class="block text-slate-500 text-sm"
+                    >Recipe by Catherine</span
+                  >
+                </div>
+                <div class="badge flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>25 mins</span>
+                </div>
+              </a>
             </div>
             <!-- cards go here -->
             <div class="card hover:shadow-lg">
-              <img
-                src="img/food03.jpg"
-                alt="Food"
-                class="w-full h-32 sm:h-48 object-cover"
-              />
-              <div class="p-4">
-                <span class="font-bold">5 Bean Chili Stew</span>
-                <span class="block text-slate-500 text-sm">Recipe by Mike</span>
-              </div>
-              <div class="badge flex justify-center items-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-5 h-5 mr-1"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-                  />
-                </svg>
-                <span>25 mins</span>
-              </div>
+              <a href="#">
+                <img
+                  src="img/food03.jpg"
+                  alt="Food"
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="p-4">
+                  <span class="font-bold">5 Bean Chili Stew</span>
+                  <span class="block text-slate-500 text-sm"
+                    >Recipe by Mike</span
+                  >
+                </div>
+                <div class="badge flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>25 mins</span>
+                </div>
+              </a>
             </div>
           </div>
 
@@ -224,14 +232,112 @@
             Most Popular
           </h4>
 
-          <div class="mt-8">
+          <div class="mt-8 grid lg:grid-cols-3 gap-6">
             <!-- cards go here -->
+            <div class="card hover:shadow-lg">
+              <a href="#">
+                <img
+                  src="img/food01.jpg"
+                  alt="Food"
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="p-4">
+                  <span class="font-bold">5 Bean Chili Stew</span>
+                  <span class="block text-slate-500 text-sm"
+                    >Recipe by Sarah</span
+                  >
+                </div>
+                <div class="badge flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>25 mins</span>
+                </div>
+              </a>
+            </div>
+            <!-- cards go here -->
+            <div class="card hover:shadow-lg">
+              <a href="#">
+                <img
+                  src="img/food02.jpg"
+                  alt="Food"
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="p-4">
+                  <span class="font-bold">Sweet Curry</span>
+                  <span class="block text-slate-500 text-sm"
+                    >Recipe by Catherine</span
+                  >
+                </div>
+                <div class="badge flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>25 mins</span>
+                </div>
+              </a>
+            </div>
+            <!-- cards go here -->
+            <div class="card hover:shadow-lg">
+              <a href="#">
+                <img
+                  src="img/food03.jpg"
+                  alt="Food"
+                  class="w-full h-32 sm:h-48 object-cover"
+                />
+                <div class="p-4">
+                  <span class="font-bold">5 Bean Chili Stew</span>
+                  <span class="block text-slate-500 text-sm"
+                    >Recipe by Mike</span
+                  >
+                </div>
+                <div class="badge flex justify-center items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 mr-1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  <span>25 mins</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center mt-10">
           <div
-            class="bg-stone-200 text-stone-600 font-bold p-3 button hover:shadow-inner"
+            class="bg-stone-200 text-stone-600 font-bold p-3 button hover:shadow-inner transform hover:scale-110 hover:bg-opacity-50 transition ease-out duration-300"
           >
             Load more
           </div>
