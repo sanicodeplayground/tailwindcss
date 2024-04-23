@@ -1,6 +1,7 @@
 # Description
 
-🌱 Looking for healthy recipes?
+🌱 Looking for healthy recipes? 
+This is a persona projected created to practise Tailwind CSS and how to host a website in Vercel.
 
 ## Table of Contents
 
