@@ -18,7 +18,7 @@
 
 
 # Screenshot
- <img src="https://i.ibb.co/h7bfFFS/Screenshot-2024-04-23-at-09-36-16.png">
+ <img src="https://i.postimg.cc/sXp4sPFz/temp-Imagec-USdy1.avif">
  
 # Tech Used
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
